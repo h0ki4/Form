@@ -1,12 +1,10 @@
 document.getElementById("myForm").addEventListener("submit", function (event) {
   event.preventDefault(); // Останавливаем отправку формы
-
   const name = document.getElementById("name").value.trim();
   const password = document.getElementById("password").value.trim();
   const errors = [];
 
-  const nameRegex = /^[А-ЯЁ][а-яё]+$/; // Только кириллица, с заглавной
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const nameRegex = /^[a-zA-Z]{2,}$/;
   const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d).{8,}$/;
 
   if (!name || !nameRegex.test(name)) {

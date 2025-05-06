@@ -115,3 +115,12 @@ body {
 #errors p {
   margin: 5px 0; /* Отступы между самими ошибками */
 }
+.btn_visability {
+  cursor: pointer;
+  color: #fff;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
